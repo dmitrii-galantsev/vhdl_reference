@@ -59,7 +59,6 @@ Statements can only be inside subprograms. Concurrent statements cannot be used 
 ```vhdl
 package body PACKAGE_NAME is
   constant C : integer := 200;
-
 end PACKAGE_NAME;
 ```
 

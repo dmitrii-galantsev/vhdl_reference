@@ -1,0 +1,10 @@
+# Chapter 4
+
+| Signal                                                                                                                                       | Variable                                                                                                         |
+| ------                                                                                                                                       | --------                                                                                                         |
+| Intended for communication between processes or to transport values between design entities.                                                 | Intended for local use in a process or subprogram.                                                               |
+| In an assignment, the new value is always scheduled for some future time (may be an infinitesimal time).                                     | In an assignment, the variable assumes the new value instantly.                                                  |
+| The value read in a process is the value that the signal had when the process resumed. Any changes are postponed until the process suspends. | The value read in a process is the current value of the variable. Any changes can be read in the next statement. |
+| In synthesizable code, multiple assignments in a process behave as if only the last assignment were effective.                               | In synthesizable code, the result is as if every assignment updated the variable.                                |
+| Can be used in both sequential and concurrent code.                                                                                          | Can be used only in sequential code.                                                                             |
+| Changes in the value of a signal can be monitored with events.                                                                               | Changes in the value of a variable have no observable side effects.                                              |
