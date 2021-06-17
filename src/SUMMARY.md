@@ -4,3 +4,4 @@
 - [Attributes aggregates and aliases](./chapter_2.md)
 - [Wait](./chapter_3.md)
 - [Signal vs Variable](./chapter_4.md)
+- [Loops](./chapter_5.md)
